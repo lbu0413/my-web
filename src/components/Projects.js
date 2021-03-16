@@ -58,6 +58,12 @@ const StyleProjects = styled.div`
         margin-bottom: 20px;
     }
 
+    span {
+        font-size: 12px;
+        color: #adb5bd;
+        align-self: center;
+    }
+
     @media (max-width: 800px) {
     .project .small-container {
         flex-flow: column;
@@ -86,6 +92,12 @@ const StyleProjects = styled.div`
         text-align: right;
         margin-bottom: 5%;
     }
+
+    span {
+        text-align: center;
+        margin: 0 auto;
+    }
+
 }
 `
 
@@ -102,14 +114,16 @@ const Projects = () => {
                     <div className="icon-container">
                         <i className="devicon-javascript-plain colored"></i>
                         <i className="devicon-react-original colored"></i>
-                        <i className="devicon-sass-original colored"></i>
+                        <i className="devicon-css3-plain colored"></i>
                     </div>
+                    <span>Click on image to experience the actual project </span>
                     <div className="small-container">
                         <Link to="/projects/todo-app">
                             <img src={todoPreview} />
                         </Link>
                         
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate maximus magna, in imperdiet mauris ultricies nec. Maecenas iaculis nisl odio, id porta tortor faucibus vel. Donec nibh neque, aliquet tempus scelerisque a, scelerisque id nunc. Nullam ante nunc, efficitur sed lacus sed, dignissim rutrum arcu. Duis pharetra, nisi ac porttitor efficitur, justo massa vulputate lacus, id malesuada dolor dolor quis massa. Phasellus purus arcu, finibus pharetra mattis sagittis, rhoncus ac elit. Nullam massa mauris, consectetur at erat viverra, elementum condimentum tortor. Aenean euismod diam elit, ac molestie ex efficitur sit amet. Duis semper malesuada diam vitae sollicitudin. Maecenas ligula tellus, volutpat id nunc a, tristique fermentum mi. Nulla sed facilisis ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                        <p>One of the first projects I made to practice in React environment.
+                        Implemented React.memo, react-virtualized and  functional updates to practice Performance Optimization. I learned that it is very important to keeping states immutable when updating in React components because it can optimize performance by only picking out what has changed and just simply renders them. While making the Todo-App, I tried to follow every rule of immutability: using concat method instead of push, or using spread operation (shallow copy) to copy objects , or also could use immer.</p>
                     </div>
                 </div>
                 <div className="project">

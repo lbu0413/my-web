@@ -1,5 +1,7 @@
 
 .TodoTemplate {
+    display: flex;
+    flex-direction: column;
     padding-top: 100px;
     width: 512px;
     margin-left: auto;
@@ -17,9 +19,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #f8f9fa;
   }
   
   .content {
     background: white;
   }
-  

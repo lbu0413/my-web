@@ -1,6 +1,8 @@
 .TodoInsert {
     display: flex;
     background: #495057;
+    border: 1px solid #f8f9fa;
+
     
 }
 
@@ -13,6 +15,7 @@ input {
     line-height: 1.5;
     color: white;
     flex: 1;
+    
 }
 
 input::placeholder {

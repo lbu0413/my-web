@@ -109,6 +109,6 @@ const Pics = () => {
             
         </StylePics>
     )
-}
+} 
 
 export default Pics;

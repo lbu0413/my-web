@@ -7,15 +7,19 @@ const StyledNav = styled.div`
     font-family: 'DotGothic16', sans-serif;
     font-weight: bold; 
     box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    position: sticky;
+    position: fixed;
+    height: 100px;
+    overflow: hidden;
 
     .nav-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: #f0f0f0;
-        border-radius: 20px;
     }
 
     header {
@@ -55,7 +59,11 @@ const StyledNav = styled.div`
         padding-bottom: 3px solid #c5d5c5;
     }
 
-
+    @media (max-width: 800px) {
+        .nav-container {
+            width: 100%;
+        }
+    }
 
 
 

@@ -36,11 +36,8 @@ import le11 from '../img/le-11.jpg'
 
 const StylePics = styled.div`
     font-family: 'DotGothic16', sans-serif;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    align-items: center; 
-    margin-top: 1rem;
+    padding-top: 100px;
+    
 
     img {
         display: block;
@@ -51,6 +48,12 @@ const StylePics = styled.div`
         padding: 5px;
         transition: transform .1s;
         border-radius: 20px;
+    }
+    .image-container {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center; 
     }
 
     img:hover {
@@ -68,7 +71,8 @@ const StylePics = styled.div`
 const Pics = () => {
     return(
         <StylePics className="pics-container">
-                    <img src={leon1}/>
+            <div className="image-container">
+            <img src={leon1}/>
                     <img src={leon2}/>
                     <img src={leon3}/>
                     <img src={leon4}/>
@@ -100,6 +104,8 @@ const Pics = () => {
                     <img src={le9}/>
                     <img src={le10}/>
                     <img src={le11}/>
+            </div>
+                    
             
         </StylePics>
     )

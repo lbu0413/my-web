@@ -19,13 +19,27 @@ const StyledHome = styled.div`
         text-align: center;
     }
 
+    @media (max-width: 800px){
+        .home-container {
+            width: 100%;
+            height: 100%;
+        }
+        span {
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+    }
+
 `
 
 
 const Home = () => {
     
     return(
-        <StyledHome>
+        <StyledHome className="home-container">
     
             <span>Welcome</span>
             <h2>This is my multi-purpose website.<br/>
